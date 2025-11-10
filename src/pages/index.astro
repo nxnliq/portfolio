@@ -1,16 +1,124 @@
 ---
-
+import BaseLayout from "@/layouts/BaseLayout.astro";
 ---
+<BaseLayout>
+	<div class="flex">
+    <div>
+      <!-- Header -->
+      <header id="home" class="text-gray-300 mb-12">
+          <nav class="flex items-center justify-between mb-12 text-sm">
+            <div class="flex space-x-4">
+              <a href="/" 
+                class="hover-gradient">
+                // home
+              </a>
+              <a href="#about" 
+                class="hover-gradient">
+                // about
+              </a>
+              <a href="#projects" 
+                class="hover-gradient">
+                // projects
+              </a>
+            </div>
+          </nav>
+        <h1 class="text-4xl font-boldmb-4 shuffled-text primary-gradient">nexon l. liquiran</h1>
+        <div class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>bulacan, philippines</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase-business-icon lucide-briefcase-business"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+          <span>full-stack developer @ wizzard technologies, inc.</span>
+        </div>
+      </header>
+    </div>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+    <div>
+
+    </div>
+  </div>
+  
+
+  <!-- Work -->
+  <section id="work" class="mb-16">
+    <h2 class="text-2xl font-bold mb-6">work</h2>
+
+    <div class="work mb-12">
+      <h3 class="text-xl mb-1 hover-gradient">wizzard technologies, inc.</h3>
+      <p class="text-sm text-gray-400 mb-2 italic"><span>full-stack developer</span> (may 2024 - present)</p>
+      <ul class="text-gray-300 space-y-2 leading-relaxed list-none">
+        <li>- developed and optimized web apps with vue.js and laravel.</li>
+        <li>- supported debugging, testing, and production deployment.</li>
+        <li>- worked with teams to meet project goals on time.</li>
+        <li>- followed best practices, version control, and agile methods.</li>
+      </ul>
+    </div>
+    <div class="work">
+      <h3 class="text-xl mb-1 hover-gradient">wizzard technologies, inc.</h3>
+      <p class="text-sm text-gray-400 mb-2 italic"><span>full-stack developer intern</span> (feb 2024 - may 2024)</p>
+      <ul class="text-gray-300 space-y-2 leading-relaxed list-none">
+        <li>- led a team to design and deploy custom systems, including a barangay information system.</li>
+        <li>- added video streaming and auto exam checking to improve online assessments.</li>
+        <li>- deployed systems on aws and on-prem servers for scalability and security.</li>
+        <li>- resolved client issues across multiple projects, boosting performance and reliability.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="mb-16">
+    <h2 class="text-2xl font-bold mb-6">projects</h2>
+
+    <div class="project">
+      <h3 class="text-xl hover-gradient">barrowit</h3>
+      <p class="text-sm text-gray-400 italic">a barangay asset management system with automated event equipment suggestions.</p>
+      <ul class="space-y-2 leading-relaxed list-none text-gray-300">
+        <li>- built a full-stack react.js + express.js system for barangay asset tracking, improving efficiency.</li>
+        <li>- added sms otp verification and real-time notifications for better security and engagement.</li>
+        <li>- automated equipment suggestions to reduce workload and speed up request processing.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Technical Skills -->
+  <section id="skills" class="mb-16">
+    <h2 class="text-2xl font-bold mb-6">skills</h2>
+    <ul>
+      <li class="text-gray-400"><span class="font-semibold text-gray-300">languages:</span> html, css, javascript, typescript, python</li>
+      <li class="text-gray-400"><span class="font-semibold text-gray-300">frameworks:</span> react, node.js, laravel, express</li>
+      <li class="text-gray-400"><span class="font-semibold text-gray-300">developer tools:</span> git, vs code, postman, docker</li> 
+      <li class="text-gray-400"><span class="font-semibold text-gray-300">cloud computing:</span> aws, azure, firebase</li>
+    </ul>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="mb-16">
+    <h2 class="text-2xl font-bold mb-6">education</h2>
+    <p class="text-xl mb-1 hover-gradient"><span>sti college novaliches</span></p>
+    <p class="text-gray-300 text-sm">bachelor of science in information technology (aug 2024)</p>
+  </section>
+
+  <section id="contact">
+    <h2 class="text-2xl font-bold mb-6">contact</h2>
+    <div class="text-gray-400">
+      <a href="mailto:nxn.liquiran@outlook.com" 
+      class="hover-gradient">
+      email
+    </a> | 
+    <a href="https://linkedin.com/in/nexon" target="_blank" 
+      class="hover-gradient">
+      linkedin
+    </a>
+    </div>
+  </section>
+</BaseLayout>
+<script>
+  import { TextScramble } from "@/utils/TextScramble"
+
+  const fullName = "nexon l. liquiran"
+
+  const el = document.querySelector('.shuffled-text')
+  const fx = new TextScramble(el)
+  fx.setText(fullName)
+</script>
