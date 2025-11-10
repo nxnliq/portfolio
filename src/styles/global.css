@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+@import "tailwindcss";
+
+:root {
+    --font-geist-mono: "Geist Mono";
+    --black: #111111;
+    --white: white;
+    --ink: var(--black);
+    --paper: var(--white);
+    --main-gradient-first-color: #ff6ec7;
+    --main-gradient-second-color: #a450f0;
+    --main-gradient-third-color: #00fff0;
+}
+
+body {
+    background-color: var(--ink);
+    color: var(--paper);
+}
+
+.font-mono {
+    font-family: var(--font-geist-mono);
+}
+
+.hover-gradient {
+  transition: all 0.3s ease;
+}
+
+.hover-gradient:hover {
+  color: transparent;
+  background-image: linear-gradient(to right, var(--main-gradient-first-color), var(--main-gradient-second-color), var(--main-gradient-third-color)); /* from-blue-400 → via-blue-500 → to-blue-700 */
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.primary-gradient {
+  background: linear-gradient(90deg, var(--main-gradient-first-color), var(--main-gradient-second-color), var(--main-gradient-third-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  transition: all 0.3s ease;
+}
+
+.primary-gradient:hover {
+  filter: brightness(1.2);
+}
